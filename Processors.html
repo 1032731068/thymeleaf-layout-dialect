@@ -1,0 +1,517 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Processors · Thymeleaf Layout Dialect</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Processors.html" />
+    
+    
+    <link rel="prev" href="Installation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Installation.html">
+            
+                <a href="Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="Processors.html">
+            
+                <a href="Processors.html">
+            
+                    
+                    Processors
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Processors.html">
+            
+                <a href="Processors.html#decorate">
+            
+                    
+                    decorate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Processors.html">
+            
+                <a href="Processors.html#title-pattern">
+            
+                    
+                    title-pattern
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Processors.html">
+            
+                <a href="Processors.html#insert">
+            
+                    
+                    insert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Processors.html">
+            
+                <a href="Processors.html#replace">
+            
+                    
+                    replace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Processors.html">
+            
+                <a href="Processors.html#fragment">
+            
+                    
+                    fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Examples.html">
+            
+                <a href="Examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Examples.html">
+            
+                <a href="Examples.html#layouts">
+            
+                    
+                    Layouts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Examples.html">
+            
+                <a href="Examples.html#passing-data-to-layouts">
+            
+                    
+                    Passing data to layouts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Examples.html">
+            
+                <a href="Examples.html#configuring-your-title">
+            
+                    
+                    Configuring your title
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Examples.html">
+            
+                <a href="Examples.html#reusable-templates">
+            
+                    
+                    Reusable templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Configuration.html">
+            
+                <a href="Configuration.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="Configuration.html">
+            
+                <a href="Configuration.html#head-element-merging">
+            
+                    
+                    head element merging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="MigrationGuide.html">
+            
+                <a href="MigrationGuide.html">
+            
+                    
+                    Migrating to 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <a target="_blank" href="https://ultraq.github.io/thymeleaf-layout-dialect/groovydoc/">
+            
+                    
+                    GroovyDoc/API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Processors</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="processors">Processors</h1>
+<h2 id="decorate">decorate</h2>
+<ul>
+<li>XML attribute: <code>layout:decorate</code></li>
+<li>Data attribute: <code>data-layout-decorate</code></li>
+</ul>
+<p>Used in your content templates and declared in the root tag (usually <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span></code>),
+this processor takes a <a href="https://github.com/thymeleaf/thymeleaf/issues/451" target="_blank">fragment expression</a>
+that specifies the layout template to decorate with the current, content
+template.</p>
+<p>Check out the <a href="Examples.html#layouts">Layouts</a> example for how to decorate a
+layout template with your content templates.</p>
+<h2 id="title-pattern">title-pattern</h2>
+<ul>
+<li>XML attribute: <code>layout:title-pattern</code></li>
+<li>Data attribute: <code>data-layout-title-pattern</code></li>
+</ul>
+<p>Allows for greater control of the resulting <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span></code> element by specifying a
+pattern with some special tokens.  This can be used to extend the layout&apos;s title
+with the content&apos;s one, instead of simply overriding it.</p>
+<p>Check out the <a href="Examples.html#configuring-your-title">Configuring your Title</a>
+example for how to control the final title of your page.</p>
+<h2 id="insert">insert</h2>
+<ul>
+<li>XML attribute: <code>layout:insert</code></li>
+<li>Data attribute: <code>data-layout-insert</code></li>
+</ul>
+<p>Similar to Thymeleaf&apos;s <code>th:insert</code>, but allows the passing of entire element
+fragments to the inserted template.  Useful if you have some HTML that you want
+to reuse, but whose contents are too complex to determine or construct with
+context variables alone.</p>
+<p>Check out the <a href="Examples.html#reusable-templates">Reusable templates</a> example for
+how to pass HTML code to the templates you want to insert.</p>
+<h2 id="replace">replace</h2>
+<ul>
+<li>XML attribute: <code>layout:replace</code></li>
+<li>Data attribute: <code>data-layout-replace</code></li>
+</ul>
+<p>Similar to <code>layout:insert</code> in that you can pass HTML content to the
+template/fragments you&apos;re replacing, but with the behaviour of Thymeleaf&apos;s <code>th:replace</code>.</p>
+<h2 id="fragment">fragment</h2>
+<ul>
+<li>XML attribute: <code>layout:fragment</code></li>
+<li>Data attribute: <code>data-layout-fragment</code></li>
+</ul>
+<p>The glue that holds everything together; it marks sections in your layout or
+reusable templates that can be replaced by sections which share the same name.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Installation.html" class="navigation navigation-prev " aria-label="Previous page: Installation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Processors.html#decorate" class="navigation navigation-next " aria-label="Next page: decorate">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Processors","level":"1.3","depth":1,"next":{"title":"decorate","level":"1.3.1","depth":2,"anchor":"#decorate","path":"Processors.md","ref":"Processors.md#decorate","articles":[]},"previous":{"title":"Installation","level":"1.2","depth":1,"path":"Installation.md","ref":"Installation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","prism","-highlight"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/ultraq/thymeleaf-layout-dialect/tree/master"},"github":{"url":"https://github.com/ultraq/thymeleaf-layout-dialect"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"Introduction.md","glossary":"GLOSSARY.md","summary":"TableOfContents.md"},"variables":{},"title":"Thymeleaf Layout Dialect","gitbook":"*"},"file":{"path":"Processors.md","mtime":"2017-05-15T10:10:24.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2018-03-14T08:27:11.912Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
